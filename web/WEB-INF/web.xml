@@ -60,7 +60,7 @@
         <servlet-name>OrderServlet</servlet-name>
         <servlet-class>servlet.OrderServlet</servlet-class>
     </servlet>
-     <servlet>
+    <servlet>
         <servlet-name>DisplayAccountServlet</servlet-name>
         <servlet-class>servlet.DisplayAccountServlet</servlet-class>
     </servlet>
@@ -71,6 +71,14 @@
     <servlet>
         <servlet-name>DeleteAccountServlet</servlet-name>
         <servlet-class>servlet.DeleteAccountServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CartServlet</servlet-name>
+        <servlet-class>servlet.CartServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>IncDecServlet</servlet-name>
+        <servlet-class>servlet.IncDecServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>HomeServlet</servlet-name>
@@ -143,6 +151,10 @@
     <servlet-mapping>
         <servlet-name>DeleteAccountServlet</servlet-name>
         <url-pattern>/DeleteAccountServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IncDecServlet</servlet-name>
+        <url-pattern>/IncDecServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
